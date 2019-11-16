@@ -1,0 +1,105 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="public\estilo.css" />
+  <script src="public\script.js"></script>
+
+  <!-- Bootstrap v4.3-->
+  <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css" />
+  <script src="public\bootstrap\js\bootstrap.min.js"></script>
+
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="public\fontawesome\css\all.css" />
+
+</head>
+
+<body>
+
+  <!-- HEADER-->
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light text-dark">
+    <a class="navbar-brand text-primary" data-toggle="tooltip" data-placement="top" title="Pagina Incial"
+      href="home.html">Garagens
+      do Futuro</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-primary" data-toggle="tooltip" data-placement="top" title="Garagem"
+            href="tableGaragem.html">Gagaragem
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" data-toggle="tooltip" data-placement="top" title="Veiculo"
+            href="tableVeiculo.html">Veiculo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" data-toggle="tooltip" data-placement="top" title="Usuário"
+            href="tableUsuario.html">Usuário</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Conteúdo aqui -->
+    <form>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Nome da Gagaragem</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nome da Gagaragem">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Cidade</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Cidade">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Estado</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Estado">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Pais</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Pais">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">CEP</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="CEP">
+      </div>
+      <!-- <div class="d-flex justify-content-end">
+        <button onClick="Salvar()" class="btn btn-outline-success">Salvar</button>
+        <button onClick="Cancelar()" class="btn btn-outline-primary">Cancelar</button>
+      </div> -->
+      <input class="button" class="btn btn-outline-success" type="submit" value="Salvar"
+        formaction="tableGaragem.html" />
+      <input class="button" class="btn btn-outline-success" type="submit" value="Cancelar"
+        formaction="tableGaragem.html" />
+    </form>
+  </div>
+  <!-- CONTENT -->
+  <div id="wrapper-content">
+    <div class="container">
+
+    </div>
+  </div>
+
+  <!-- FOOTER-->
+
+</body>
+<!-- <script type="text/javascript">
+  function Salvar() {
+    location.href = "garagem.html"
+  }
+</script> -->
+
+<!-- <script type="text/javascript">
+  function Cancelar() {
+    location.href = "garagem.html"
+  } -->
+</script>
+
+</html>

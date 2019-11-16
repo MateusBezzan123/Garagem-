@@ -1,0 +1,109 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="public\estilo.css" />
+  <script src="public\script.js"></script>
+
+  <!-- Bootstrap v4.3-->
+  <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css" />
+  <script src="public\bootstrap\js\bootstrap.min.js"></script>
+
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="public\fontawesome\css\all.css" />
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light text-dark">
+    <a class="navbar-brand text-primary" data-toggle="tooltip" data-placement="top" title="Pagina Incial"
+      href="home.html">Garagens
+      do Futuro</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-primary" data-toggle="tooltip" data-placement="top" title="Garagem"
+            href="tableGaragem.html">Gagaragem
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" data-toggle="tooltip" data-placement="top" title="Veiculo"
+            href="tableVeiculo.html">Veiculo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" data-toggle="tooltip" data-placement="top" title="Usuário"
+            href="tableUsuario.html">Usuário</a>
+        </li>
+      </ul>
+    </div>
+    <div class="float-left">
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-secondary" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+
+  <table class="table">
+
+    <thead class="thead-dark">
+      <button onClick="Nova()" class="btn btn-info">Adivionar uma Garagem</button>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nome da Gagaragem</th>
+        <th scope="col">Cidade</th>
+        <th scope="col">Pais</th>
+        <th scope="col" align="right">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Bezzanos Veiculos</td>
+        <td>Otto</td>
+        <td>Estados Unidos</td>
+        <td>
+          <p>
+            <button type="button" class="btn btn-outline-dark  fa fa-edit"> Alterar</button>
+            <button type="button" class="btn btn-outline-dark  fa fa-trash"> Excluir</button>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>João Veiculos</td>
+        <td>São Paulo</td>
+        <td>Brasil</td>
+        <td>
+          <p>
+            <button type="button" class="btn btn-outline-dark  fa fa-edit"> Alterar</button>
+            <button type="button" class="btn btn-outline-dark  fa fa-trash"> Excluir</button>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Venancio Veiculos</td>
+        <td>Brasilia</td>
+        <td>Distrito Federal</td>
+        <td>
+          <p>
+            <button type="button" class="btn btn-outline-dark  fa fa-edit"> Alterar</button>
+            <button type="button" class="btn btn-outline-dark  fa fa-trash"> Excluir</button>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <script type="text/javascript">
+    function Nova() {
+      location.href = "garagem.html"
+    }
+  </script>
+
+</html>
